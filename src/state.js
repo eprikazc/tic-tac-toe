@@ -1,4 +1,4 @@
-const PLAYER1 = 'PLSYER1'
+const PLAYER1 = 'PLAYER1'
 const PLAYER2 = 'PLAYER2'
 
 const WON_SEQUENCES = [
