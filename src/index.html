@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    .cell {
+      border: solid;
+      height: 50px;
+      width: 50px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #board {
+      display: grid;
+      grid: auto-flow / 1fr 1fr 1fr;
+      width: 150px;
+    }
+  </style>
+</head>
+<body>
+  <div id="board" class="js-board"></div>
+  <div class="js-status"></div>
+  <button class="js-reset">Reset</button>
+  <script type="module" src="index.js"></script>
+</body>
+</html>
