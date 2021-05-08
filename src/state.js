@@ -22,18 +22,18 @@ export function getInitialState() {
 }
 
 
-export function move(state, cell_index) {
+export function move(state, cellIndex) {
   const newState = Object.assign({}, state)
   const {player1Moves, player2Moves} = state
-  const isCellFree = !player2Moves.has(cell_index) && !player1Moves.has(cell_index)
+  const isCellFree = !player2Moves.has(cellIndex) && !player1Moves.has(cellIndex)
   if (!isCellFree || isGameOver(player1Moves, player2Moves)) {
     return state;
   }
   if (newState.turn == PLAYER1) {
-    player1Moves.add(cell_index)
+    player1Moves.add(cellIndex)
     newState.turn = PLAYER2
   } else {
-    player2Moves.add(cell_index)
+    player2Moves.add(cellIndex)
     newState.turn = PLAYER1
   }
   return newState
